@@ -214,6 +214,7 @@ img {
   background-color: var(--btn-hover-color);
 }
 
+/* modal */
 .order-btn-backdrop {
   position: fixed;
   top: 0;
@@ -231,6 +232,7 @@ img {
 }
 
 .order-btn-modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -275,6 +277,147 @@ img {
   fill: var(--header-bg-color);
 }
 
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--headings-color);
+  margin-bottom: 16px;
+}
+
+.name-form-wrapper,
+.phone-form-wrapper,
+.email-form-wrapper {
+  margin-bottom: 8px;
+}
+
+.name-label,
+.phone-label,
+.email-label,
+.comment-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--helper-text-color);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.name-input-wrapper,
+.phone-input-wrapper,
+.email-input-wrapper {
+  position: relative;
+}
+
+.name-input,
+.phone-input,
+.email-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.name-input:focus,
+.phone-input:focus,
+.email-input:focus {
+  border-color: var(--active-state-color);
+}
+
+.name-icon,
+.phone-icon,
+.email-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.name-input:focus + .name-icon,
+.phone-input:focus + .phone-icon,
+.email-input:focus + .email-icon {
+  fill: var(--active-state-color);
+}
+
+.comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.comment:focus {
+  border-color: var(--active-state-color);
+}
+
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--helper-text-color);
+}
+
+.checkbox-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  fill: transparent;
+}
+
+.checkbox-icon {
+
+}
+
+.checkbox-input:active + .checkbox-span {
+  background-color: var(--btn-hover-color);
+  border: none;
+  fill: var(--header-bg-color);
+}
+
+.privacy-policy-link {
+  color: var(--active-state-color);
+}
+
+.send-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--header-bg-color);
+  cursor: pointer;
+  background-color: var(--active-state-color);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-and-func);
+}
 /* sections */
 .features {
   padding-top: 120px;
@@ -643,3 +786,61 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 } 
+
+.subscribe {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--header-bg-color);
+
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-lable {
+  margin-right: 24px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--header-bg-color);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--header-bg-color);
+}
+
+.footer-input::placeholder {
+  color: var(--header-bg-color);
+}
+
+.subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--header-bg-color);
+  cursor: pointer;
+  background-color: var(--active-state-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+}
