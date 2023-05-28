@@ -304,9 +304,7 @@ img {
   position: relative;
 }
 
-.name-input,
-.phone-input,
-.email-input {
+.input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -317,15 +315,11 @@ img {
   transition: border-color var(--transition-dur-and-func);
 }
 
-.name-input:focus,
-.phone-input:focus,
-.email-input:focus {
+input:focus {
   border-color: var(--active-state-color);
 }
 
-.name-icon,
-.phone-icon,
-.email-icon {
+.input-icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -333,9 +327,7 @@ img {
   transition: fill var(--transition-dur-and-func);
 }
 
-.name-input:focus + .name-icon,
-.phone-input:focus + .phone-icon,
-.email-input:focus + .email-icon {
+.input:focus + .input-icon {
   fill: var(--active-state-color);
 }
 
@@ -385,11 +377,8 @@ img {
   fill: transparent;
 }
 
-.checkbox-icon {
-
-}
-
-.checkbox-input:active + .checkbox-span {
+.checkbox-input:checked + .checkbox-label > .checkbox-span {
+  opacity: 1;
   background-color: var(--btn-hover-color);
   border: none;
   fill: var(--header-bg-color);
@@ -400,6 +389,8 @@ img {
 }
 
 .send-btn {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   min-width: 169px;
   height: 56px;
@@ -799,6 +790,10 @@ img {
 
 }
 
+.footer-form-wrapper {
+  margin-left: auto;
+}
+
 .footer-form {
   display: flex;
 }
@@ -841,8 +836,14 @@ img {
   background-color: var(--active-state-color);
   border: none;
   border-radius: 4px;
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.subscribe-btn:hover {
+  background-color: var(--valid-fields-color);
 }
 
 .subscribe-icon {
   margin-left: 16px;
+  fill: var(--header-bg-color);
 }
