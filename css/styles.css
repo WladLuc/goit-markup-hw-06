@@ -378,9 +378,9 @@ input:focus {
 }
 
 .checkbox-input:checked + .checkbox-label > .checkbox-span {
+  border-color: var(--btn-hover-color);
   visibility: visible;
   background-color: var(--btn-hover-color);
-  border-color: var(--btn-hover-color);
   border: none;
   fill: var(--header-bg-color);
 }
