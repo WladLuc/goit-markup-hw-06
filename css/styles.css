@@ -287,16 +287,11 @@ img {
   margin-bottom: 16px;
 }
 
-.name-form-wrapper,
-.phone-form-wrapper,
-.email-form-wrapper {
+.form-wrapper {
   margin-bottom: 8px;
 }
 
-.name-label,
-.phone-label,
-.email-label,
-.comment-label {
+.label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -305,9 +300,7 @@ img {
   margin-bottom: 4px;
 }
 
-.name-input-wrapper,
-.phone-input-wrapper,
-.email-input-wrapper {
+.input-wrapper {
   position: relative;
 }
 
@@ -344,6 +337,10 @@ img {
 .phone-input:focus + .phone-icon,
 .email-input:focus + .email-icon {
   fill: var(--active-state-color);
+}
+
+.comment-form-wrapper {
+  margin-bottom: 16px;
 }
 
 .comment {
@@ -418,6 +415,11 @@ img {
   border-radius: 4px;
   transition: background-color var(--transition-dur-and-func);
 }
+
+.send-btn:hover {
+  background-color: var(--btn-hover-color);
+}
+
 /* sections */
 .features {
   padding-top: 120px;
