@@ -383,6 +383,7 @@ input:focus {
   background-color: var(--btn-hover-color);
   border: none;
   fill: var(--header-bg-color);
+  
 }
 
 .privacy-policy-link {
