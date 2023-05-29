@@ -387,6 +387,10 @@ input:focus {
   fill: var(--header-bg-color);
 }
 
+.checkbox-input:checked+.checkbox-label>.checkbox-span {
+  border-color: var(--btn-hover-color);
+}
+
 .checkbox-span {
   margin-right: 8px;
 }
