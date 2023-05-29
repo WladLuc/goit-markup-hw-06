@@ -320,6 +320,7 @@ input:focus {
 }
 
 .input-icon {
+  fill: var(--headings-color);
   position: absolute;
   left: 16px;
   top: 50%;
@@ -336,6 +337,7 @@ input:focus {
 }
 
 .comment {
+  display: block;
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -386,8 +388,8 @@ input:focus {
   fill: var(--header-bg-color);
 }
 
-.checkbox-input:checked+.checkbox-label>.checkbox-span {
-  border-color: var(--btn-hover-color);
+.checkbox-span {
+  margin-right: 8px;
 }
 
 .privacy-policy-link {
